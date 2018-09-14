@@ -57,10 +57,37 @@ and open the template in the editor.
                     var_dump($existe);
                     //Recorriendo un arreglo con foreach
                     //foreach
-                    foreach ($usuarios as $user){
+                    /*foreach ($usuarios as $user){
                         echo "<li>". $user."</li>";
-                    }
+                    }*/
                 ?>
+                <ul>
+                    <?php
+                        //Recorriendo un arreglo con foreach
+                        //foreach
+                        foreach ($usuarios as $user){
+                            echo "<li>". $user."</li>";
+                        }
+                        //foreach mostrando indice y valor del arreglo
+                        foreach ($usuarios as $key => $user){
+                            echo "<li>".$key." ".$user."</li>";
+                        }
+                        //ciclo for
+                        for($i =0; $i <4; $i++){
+                            echo $i;
+                        }
+                        //ciclo while
+                        echo '<br>';
+                        $cont = 0;
+                        while($cont < 5){
+                            echo $cont;
+                            if($cont ==3){
+                                break;
+                            }
+                            $cont++;
+                        }
+                    ?>
+                </ul>
             </h3>
             
         </pre>
