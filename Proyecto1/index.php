@@ -10,8 +10,39 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <h1>
+            <?php
+            //Esto es un comentario
+                $PrimeraVariable = 2;
+                $SegundaVariable = 5;
+                $lenguaje = "Javascript";
+                if ($PrimeraVariable == 1 && $SegundaVariable == 5) {
+                    echo 'Soy menor';
+                }
+                else {
+                    echo 'Soy mayor';
+                }
+                switch ($lenguaje) {
+                    case "Php":
+                        echo 'Php';
+                        break;
+                    case "Javascript":
+                        echo 'Javascript';
+                        break;
+                    case "html":
+                        echo 'Html';
+                        break;
+                }
+
+            ?>
+        </h1>
+        <p>
+            <h2>
+                <?php
+                    echo 'Esta es otra sección';
+                ?>
+            </h2>
+        </p>
+        
     </body>
 </html>
