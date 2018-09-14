@@ -22,6 +22,7 @@ and open the template in the editor.
                 else {
                     echo 'Soy mayor';
                 }
+                echo '<br>';
                 switch ($lenguaje) {
                     case "Php":
                         echo 'Php';
@@ -33,16 +34,35 @@ and open the template in the editor.
                         echo 'Html';
                         break;
                 }
-
+                echo "<br>";
+                $arreglo = array(2,"hola",5);
+                print_r($arreglo);
+                //echo $arreglo[2] . "<br>" . $arreglo[1];
             ?>
         </h1>
-        <p>
-            <h2>
+        <pre>
+            <h3>
                 <?php
-                    echo 'Esta es otra sección';
+                    var_dump($arreglo);
+                    echo '<br>';
+                    $arreglo[] = "Python";
+                    var_dump($arreglo);
+
+                    //Arreglos asociativas
+                    $usuarios = array('nombre' => "Juan",
+                            "Apellido" => "zabala","Cedula" => 1234);
+                    echo "<h1>" . $usuarios['nombre'] . "</h1>"; 
+                    echo 'hola' . "<br>";
+                    $existe = in_array("Juan", array_values($usuarios));
+                    var_dump($existe);
+                    //Recorriendo un arreglo con foreach
+                    //foreach
+                    foreach ($usuarios as $user){
+                        echo "<li>". $user."</li>";
+                    }
                 ?>
-            </h2>
-        </p>
-        
+            </h3>
+            
+        </pre>
     </body>
 </html>
