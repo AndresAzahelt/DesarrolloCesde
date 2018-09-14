@@ -1,2 +1,0 @@
-# DesarrolloCesde
-Desarrollo de aplicaciones 
