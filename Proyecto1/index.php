@@ -10,7 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <h1>
+       <!-- <h1>
             <?php
             //Esto es un comentario
                 $PrimeraVariable = 2;
@@ -91,5 +91,39 @@ and open the template in the editor.
             </h3>
             
         </pre>
+        <pre>
+            <?php
+                $tecnologias = ['html','css','javascript',20];
+                print_r($tecnologias);
+                $tecnologias[] = "kata";
+                //borra el ultimo elemento y lo agrego a una variable
+                $python = array_pop($tecnologias);
+                echo $python;
+                echo '<br>';
+                //borra el primer elemento
+                unset($tecnologias[0]);
+                //borra el primer elemento y lo agrego a una variable
+                $css = array_shift($tecnologias);
+                echo $css;
+            ?>
+        </pre> -->
+        <?php
+        //Función sin parametros
+            function saludar(){
+                echo '<h2>'.'Hola cabros'.'</h2>';
+            }
+            saludar();
+         //Función con parámetros
+         function usuario($nombres, $tel){
+             foreach ($nombres as $nombre){
+                 echo "Nombres: " . $nombre. '<br>';
+             }
+             //echo "Nombre: " .$nombre .'<br>';
+             echo "Tel: " .$tel;
+         }
+         $usuarios = ["Juan","Felipe","Alejandro"];
+         usuario($usuarios, 12345);
+        ?>    
+        
     </body>
 </html>
