@@ -123,7 +123,25 @@ and open the template in the editor.
          }
          $usuarios = ["Juan","Felipe","Alejandro"];
          usuario($usuarios, 12345);
-        ?>    
+         echo '<br>';
+         function suma($num1,$num2){
+             return  $num1 + $num2;
+         }
+         $result = suma(2,4);
+         echo "Suma: " .$result;
+         echo '<br>';
+         //usando variable global
+         $agenda = array();
+         function agendar($nombre,$tel){
+             global $agenda;
+             $agenda[] = $nombre;
+             $agenda[] = $tel;
+         }
+         agendar("Juan",12451);
+         $agenda[] = "camilo";
+         print_r($agenda);
+         ?>
+      
         
     </body>
 </html>
