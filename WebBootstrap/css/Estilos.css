@@ -1,0 +1,55 @@
+#logo{
+    width: 60px;
+    height: 60px;
+}
+/*#212121*/
+.navbar{
+    background-color: #212121;
+    /*height: 65px;*/
+}
+/*Formulario*/
+.titulo-form{
+    color: purple;
+    text-align: center;
+    
+}
+/*Imagen*/
+.registro{
+    text-align: center;
+    width: 100%;
+    height: 0%;
+}
+.btn-enviar{
+    background: #512DA8;
+}
+/*Pie de Página*/
+#footer-fondo{
+	background-color: #212121;
+}
+.footer-info1{
+	height: 50px;
+	background-color: #1A237E;
+	color: white;
+}
+.footer-info2{
+	background-color: #212121;
+	color: white;
+}
+.footer-info3{
+	background-color: black;
+	color: white;
+	height: 60px;
+}
+/*Tamaño de iconos de contacto*/
+.icon-w{
+	width: 40px;
+	height: 30px;
+}
+label{
+	color: #33eaff;
+}
+#copy-color{
+	color: #33eaff;
+}
+/*Fin Pie de Página*/
+
